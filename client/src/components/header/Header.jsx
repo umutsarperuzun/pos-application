@@ -1,13 +1,20 @@
 import React from 'react';
 import {SearchOutlined , HomeOutlined ,ShoppingCartOutlined,CopyOutlined,UserOutlined,BarChartOutlined,LogoutOutlined}  from '@ant-design/icons';
-import { Badge, Input } from 'antd';
-import { Link } from "react-router-dom";
+import { Badge, Input,message} from 'antd';
+import { Link,useNavigate } from "react-router-dom";
 import { useSelector } from 'react-redux';
 import "./index.css"
 
 const Header = () => {
     const cart = useSelector((state)=> state.cart);
-    console.log(cart.cartItems.length);
+    const navigate = useNavigate()
+    const logOut = () => {
+        if(window.confirm("Are you sure to logout?")){
+            localStorage.removeItem("posUser");
+            navigate("/login")
+            message.success("Logout successfully")
+        }
+    }
     
     return (
         <div className='border-b mb-6'>
@@ -69,12 +76,14 @@ const Header = () => {
                         <span className='text-[10px] md:text-xs'>Stats</span>
                         </span>
                     </Link>
-                    <a href={"/"} className='menu-link'>
+                    <div onClick={logOut}>
+                    <Link className='menu-link' >
                         <span>
                         <LogoutOutlined className='md:text-2xl text-xl'/> 
                         <span className='text-[10px] md:text-xs'>Logout</span>
                         </span>
-                    </a>
+                    </Link>
+                    </div>
                 </div>
                 <Badge count={cart.cartItems.length} offset={[0, 0]} className="md:hidden flex">
                     <Link

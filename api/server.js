@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const app = express();
 const cors = require("cors")
+const logger =require("morgan")
 const port = 5000;
 
 // routes
@@ -24,8 +25,10 @@ const connect = async () => {
   }
 };
 //middlewares
+app.use(logger("dev"))
 app.use(express.json());
 app.use(cors());
+
 
 app.use("/api/categories",categoryRoute);
 app.use("/api/products",productRoute);
