@@ -56,7 +56,7 @@ const InvoicePage = () => {
       dataIndex: 'subTotal',
       key: 'subTotal',
       render: (text)=>{
-        return <span>£{text}</span>
+        return <span>£{text.toFixed(2)}</span>
       }
     },
     {
