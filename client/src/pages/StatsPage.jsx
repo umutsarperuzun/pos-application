@@ -28,7 +28,7 @@ const StatisticPage = () => {
 
   const fetchInvoices = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/invoices/get-all");
+      const response = await fetch(process.env.REACT_APP_SERVER_URL + "/api/invoices/get-all");
       const result = await response.json();
       setData(result);
     } catch (error) {
@@ -38,7 +38,7 @@ const StatisticPage = () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/products/get-all");
+      const response = await fetch(process.env.REACT_APP_SERVER_URL + "/api/products/get-all");
       const result = await response.json();
       setProducts(result);
     } catch (error) {
