@@ -62,6 +62,8 @@ npm start
 ```
 ## 🚀 Deployment
 
+You can check out the deployed project https://sarper-pos-application.onrender.com/
+
 This project is ready for deployment. Below are the recommended platforms:
 
 - **Frontend**: Vercel, Netlify  
