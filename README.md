@@ -76,7 +76,7 @@ This project is ready for deployment. Below are the recommended platforms:
 5. Set the build and start commands:
    - **Build Command**: `npm install`
    - **Start Command**: `npm run dev` or `node index.js` (based on your setup)
-6. Add environment variables (e.g., `MONGO_URL`, `JWT_SECRET`)
+6. Add environment variables (e.g., `MONGO_URI`, `JWT_SECRET`)
 7. Deploy!
 
 > 🔐 Make sure to set up your environment variables correctly in Render dashboard.
