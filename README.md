@@ -1,7 +1,7 @@
 # 🚀 POS Project - Full-Stack MERN Application   
 
 ## 📌 About the Project  
-This project is a **Full-Stack POS (Point of Sale) System** built using the **MERN Stack (MongoDB, Express.js, React, Node.js)**. The project covers modern web development techniques, authentication, API integration, and UI/UX best practices, making it a great learning experience for developers who want to master **Full-Stack development**.  
+This project is a **Full-Stack POS (Point of Sale) System** built using the **MERN Stack (MongoDB, Express.js, React, Node.js)**. The project covers modern web development techniques, authentication, API integration, and UI/UX best practices, making it a great learning experience for developers who want to master **Full-Stack development**.
 
 ## 🎯 What You Will Learn  
 By completing this project, you will gain experience in:  
@@ -27,7 +27,7 @@ By completing this project, you will gain experience in:
 - **Authentication**: JWT (JSON Web Token)  
 - **Deployment**: Hosting & Deployment for MERN Stack  
 
-## 🔧 Installation & Setup  
+## 🔧 Installation &  Setup  
 
 ### 1️⃣ Clone the Repository  
 ```bash
