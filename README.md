@@ -18,7 +18,7 @@ By completing this project, you will gain experience in:
 ✅ Implementing **invoicing features** in a React project  
 ✅ Working with **Ant Design** for modern UI design  
 ✅ Managing state with **Redux-Toolkit**  
-✅ Visualizing data and statistics in a React project  
+✅ Visualizing data and statistics in a React project.  
 ✅ Learning **Tailwind CSS** step by step  
 
 ## 🛠️ Tech Stack  
